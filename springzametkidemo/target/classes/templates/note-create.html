@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+<title>Создать заметку</title>
+</head>
+<body>
+<form action="#" th:action="@{/note-create}" th:object="${note}" method="post">
+    <label for="UserNote">Пользователь</label>
+    <input type="text" th:field="*{UserNote}" id="UserNote" placeholder="UserNote">
+    <label for="TextNote">Текс</label>
+    <input type="text" th:field="*{TextNote}" id="TextNote" placeholder="TextNote">
+    <input type="submit" value="Создать Заметку">
+</form>
+</body>
+</html>
